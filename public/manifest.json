@@ -1,0 +1,8 @@
+{
+  "short_name": "북아레나",
+  "name": "많은 책들을 한번에.",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
