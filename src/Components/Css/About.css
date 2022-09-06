@@ -8,7 +8,12 @@ h2, h3 {
 }
 
 h4 {
-    margin: 0;
+    margin-top: 40px;
+    margin-bottom: 14px;
+}
+
+ol {
+    padding-left: 16px;
 }
 
 .logo-profile {
@@ -18,9 +23,9 @@ h4 {
 .dev-info {
     width: 490px;
     height: auto;
-    margin: 14px;
     display: inline-block;
-    border-radius: 5px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px ;
     background-color: #FDA0A0;
 }
 
@@ -61,13 +66,39 @@ details {
     display: block;
 }
 
+.my-portfolio {
+    width: 490px;
+    height: auto;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background: #FDA0A0;
+    border-left: 3px solid rgb(129, 129, 129);
+    transition: all .3s;
+}
+
+.my-portfolio:hover {
+    background: #d88c8c;
+}
+
+.my-portfolio > p {
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+    color: white;
+}
+
 @media all and (max-width: 768px) {
     .logo-profile {
         width: 130px;
     }
 
     .dev-info {
-        width: 350px;
+        width: 340px;
         font-size: 14px;
+    }
+
+    .my-portfolio {
+        width: 340px;
     }
 }

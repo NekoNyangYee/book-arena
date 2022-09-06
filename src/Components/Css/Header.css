@@ -10,7 +10,7 @@
 }
 
 .Header-nav[data-isopen="true"] {
-  height: 90px;
+  height: 98px;
 }
 
 .Main-logo {
@@ -66,6 +66,7 @@
 
 .burger-list {
   text-align: center;
+  font-size: 18px;
 }
 
 .burger-list > a {

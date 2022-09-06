@@ -6,11 +6,9 @@ import './Css/Search.css';
 
 const Search = props => {
 
-    // states
     const [searchQuery, setSearchQuery] = useState('');
     const [result, setResult] = useState([]);
 
-    //book search 핸들러
     const bookSearchHttpHandler = async (query, reset) => {
         const params = {
             query,
@@ -28,7 +26,21 @@ const Search = props => {
             setResult(result.concat(data.documents));
         }
     };
-
+    const bookContaniner = result.map((e, i) =>
+        <div key={i} className='bookInfo'>
+            <a href={e.url}>
+                <img src={e.thumbnail} alt={e.title} className='book-thumbnail' />
+                <div className='book-title'>
+                    {e.title}
+                </div>
+                <hr />
+                <div className='book-price'>
+                    <p>정가 : {e.price}원</p>
+                    <p>판매상태 : {e.status}</p>
+                </div>
+            </a>
+        </div>
+    )
     return (
         <div className="Search-window">
             <h1>검색</h1>
@@ -44,23 +56,7 @@ const Search = props => {
             </div>
             <p className='result-length'>" <strong>{searchQuery}</strong> " 검색 결과, 총 <strong>{result.length}</strong> 개의 책이 있습니다.</p>
             <div className='book-container'>
-                {
-                    result.map((e, i) =>
-                        <div key={i} className='bookInfo'>
-                            <a href={e.url}>
-                                <img src={e.thumbnail} alt={e.title} className='book-thumbnail' />
-                                <div className='book-title'>
-                                    {e.title}
-                                </div>
-                                <hr />
-                                <div className='book-price'>
-                                    <p>정가 : {e.price}원</p>
-                                    <p>판매상태 : {e.status}</p>
-                                </div>
-                            </a>
-                        </div>
-                    )
-                }
+                {bookContaniner}
             </div>
 
         </div>

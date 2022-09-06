@@ -17,10 +17,10 @@ function Header() {
                 <img className='Menu-burgur' onClick={() => setExpanded(!expanded)} src='./img/Menu-burgur.png' />
 
                 <div className='Nav-list'>
-                    <NavLink to='About'>더보기</NavLink>
+                    <NavLink to='About'><strong>더보기</strong></NavLink>
                 </div>
                 <div className='Nav-list'>
-                    <NavLink to='/'>홈</NavLink>
+                    <NavLink to='/'><strong>홈</strong></NavLink>
                 </div>
                 <div className='Nav-list'>
                     <NavLink to='Search'>
@@ -28,8 +28,8 @@ function Header() {
                     </NavLink>
                 </div>
                 <div className='burger-list'>
-                    <NavLink to='/'>홈</NavLink>
-                    <NavLink to='About'>더보기</NavLink>
+                    <NavLink to='/'><strong>홈</strong></NavLink>
+                    <NavLink to='About'><strong>더보기</strong></NavLink>
                 </div>
 
             </div>

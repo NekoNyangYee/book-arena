@@ -7,25 +7,27 @@ function About() {
     const MyInfo = {
         name: '김태현',
         email: 'kth08122570@gmail.com',
-        mygithub: '추후 공개 예정'
+        mygithub: 'https://github.com/NekoNyangYee/book-arena.git'
     }
 
-    const UpdateList = ({date, version, lists}) => (
+    const UpdateList = list.map((el, i) => (
         < div className='summary-devinfo' >
-            <h2>{date}</h2>
-            <h3>{version}</h3>
+            <h2>{el.date}</h2>
+            <h3>{el.version}</h3>
             <ol>
-                <li>{lists}</li>
+                {el.lists.map((k) => (
+                    <li>{k}</li>
+                ))}
             </ol>
         </div >
-    )
+    ))
 
     return (
         <div className='about-page'>
             <h1>정보</h1>
             <img src="./img/Logo-profile.png" alt="BookArena" className='logo-profile' />
-            <p>Version: 1.0.0(Beta)</p>
-            <p>lastest Update: 2022-09-04</p>
+            <p>Version: 1.1.10 (Beta)</p>
+            <p>lastest Update: 2022-09-06</p>
             <h4>개발 정보</h4>
             <div className='dev-info'>
                 <details>
@@ -51,9 +53,20 @@ function About() {
                     <summary>
                         <p>업데이트 내용</p>
                     </summary>
-                    {list.map((e) => <UpdateList {...e}/>)}
+                    {UpdateList}
                 </details>
             </div>
+            <h4>개발자 포트폴리오</h4>
+            <a href='https://planning-note.vercel.app/'>
+                <div className='my-portfolio'>
+                    <p>Planning Note</p>
+                </div>
+            </a>
+            <a href='https://nekonyangyee.github.io/Univ.barogagi/Univ_Barogagi.html'>
+                <div className='my-portfolio'>
+                    <p>대학 바로가기</p>
+                </div>
+            </a>
         </div>
     );
 }
