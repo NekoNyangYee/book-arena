@@ -27,6 +27,7 @@ ol {
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px ;
     background-color: #FDA0A0;
+    
 }
 
 summary > p {
@@ -41,6 +42,10 @@ summary {
     border-left: 3px solid rgb(129, 129, 129);
     cursor: pointer;
 }
+
+details > summary::-webkit-details-marker {
+    display: none;
+  }
 
 details {
     border-bottom: 1px solid lightgray;
@@ -88,7 +93,7 @@ details {
     color: white;
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 760px) {
     .logo-profile {
         width: 130px;
     }
