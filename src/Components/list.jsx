@@ -1,5 +1,14 @@
 const list = [
     {
+        date: '2022-09-07',
+        version: '1.2.2 (Beta)',
+        lists: [
+            '사파리에서 summary marker 표시 오류 수정',
+            '특정 기종에서 검색시 책 목록이 2줄이 아닌 1줄로 뜨는 현상 수정'
+        ]
+    },
+
+    {
         date: '2022-09-06',
         version: '1.1.10 (Beta)',
         lists: [

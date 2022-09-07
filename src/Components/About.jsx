@@ -26,8 +26,8 @@ function About() {
         <div className='about-page'>
             <h1>정보</h1>
             <img src="./img/Logo-profile.png" alt="BookArena" className='logo-profile' />
-            <p>Version: 1.1.10 (Beta)</p>
-            <p>lastest Update: 2022-09-06</p>
+            <p>Version: 1.2.2 (Beta)</p>
+            <p>lastest Update: 2022-09-07</p>
             <h4>개발 정보</h4>
             <div className='dev-info'>
                 <details>
