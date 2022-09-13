@@ -1,10 +1,14 @@
 * {
     font-family: 'Noto Sans KR', sans-serif;
+    text-decoration: none;
+    color: white;
 }
 
-* {
-    text-decoration: none;
-    color: black;
+html {
+    background-color: #1a0058;
+    position: relative;
+    top: 60px;
+    height: 100%;
 }
 
 h1 {

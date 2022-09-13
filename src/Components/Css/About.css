@@ -1,5 +1,5 @@
 .about-page {
-   text-align: center; 
+    text-align: center;
 }
 
 h2, h3 {
@@ -8,7 +8,7 @@ h2, h3 {
 }
 
 h4 {
-    margin-top: 40px;
+    position: relative;
     margin-bottom: 14px;
 }
 
@@ -17,20 +17,20 @@ ol {
 }
 
 .logo-profile {
-    margin: 20px;
+    margin: 40px;
+    width: 180px;
 }
 
 .dev-info {
-    width: 490px;
+    width: 550px;
     height: auto;
+    margin: 20px;
     display: inline-block;
-    border-top-right-radius: 7px;
-    border-bottom-right-radius: 7px ;
-    background-color: #FDA0A0;
-    
+    border-radius: 20px;
+    background-color: #392e77;
 }
 
-summary > p {
+summary>p {
     margin: 0;
     padding: 10px;
     text-align: left;
@@ -39,16 +39,11 @@ summary > p {
 
 summary {
     display: block;
-    border-left: 3px solid rgb(129, 129, 129);
     cursor: pointer;
 }
 
-details > summary::-webkit-details-marker {
+details>summary::-webkit-details-marker {
     display: none;
-  }
-
-details {
-    border-bottom: 1px solid lightgray;
 }
 
 .react-logo {
@@ -65,45 +60,116 @@ details {
 .summary-devinfo {
     text-align: left;
     margin: 0;
-    padding: 10px;
-    background: white;
-    border: 1px solid lightgray;
+    padding: 20px;
+    background: rgb(33, 23, 80);
     display: block;
 }
 
 .my-portfolio {
-    width: 490px;
+    width: 550px;
     height: auto;
-    margin: 0;
+    margin: 16px;
+    padding: 3px;
     margin-left: auto;
     margin-right: auto;
-    background: #FDA0A0;
-    border-left: 3px solid rgb(129, 129, 129);
-    transition: all .3s;
+    text-align: left;
+    background: #392e77;
+    border-radius: 20px;
 }
 
 .my-portfolio:hover {
     background: #d88c8c;
 }
 
-.my-portfolio > p {
-    margin: 0;
-    padding: 10px;
-    text-align: left;
+a > p {
     color: white;
+    margin-top: 10px;
 }
 
-@media all and (max-width: 760px) {
+.left-info {
+    position: fixed;
+    top: 90px;
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.right-info {
+    float: right;
+    width: 50%;
+    height: 850px;
+
+}
+
+.version-update-info {
+    width: 550px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 6px;
+    border-radius: 20px;
+    background: #392e77;
+}
+
+.dev-info-icon {
+    position: relative;
+    top: 3px;
+    margin-left: 5px;
+    margin-right: 12px;
+}
+
+.planning-note-logo {
+    position: relative;
+    width: 20px;
+    top: 6px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.list-container {
+    background: #392e77;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 12px;
+}
+@media all and (max-width: 1179px) {
+    h4 {
+        font-size: 13px;
+    }
     .logo-profile {
         width: 130px;
     }
 
     .dev-info {
-        width: 340px;
+        width: 330px;
         font-size: 14px;
     }
 
     .my-portfolio {
-        width: 340px;
+        width: 330px;
+    }
+
+    .left-info {
+        position: relative;
+        top: 0;
+        float: none;
+        width: 100%;
+    }
+
+    .right-info {
+        width: 100%;
+        height: auto;
+        float: none;
+        overflow: visible;
+    }
+
+    .version-update-info {
+        width: 330px;
+        font-size: 14px;
+    }
+
+    a > p {
+        font-size: 14px;
+        margin-top: 6px;
     }
 }

@@ -2,6 +2,8 @@ import { bookSearch } from '../api';
 import { Routes, Route, Router, NavLink, BrowserRouter } from 'react-router-dom'
 import React, { useEffect, useState } from "react";
 
+import { FaCog, FaSearch, FaTools } from "react-icons/fa";
+
 import './Css/Search.css';
 
 const Search = props => {
@@ -19,6 +21,8 @@ const Search = props => {
 
         const { data } = await bookSearch(params); //api 호출
         console.log(data.documents);
+
+        console.log(data.meta)
 
         if (reset) {
             setResult(data.documents);
@@ -43,7 +47,6 @@ const Search = props => {
     )
     return (
         <div className="Search-window">
-            <h1>검색</h1>
             <div className='searchbox'>
                 <input type='search'
                     placeholder='검색할 책을 입력하세요..'
@@ -52,13 +55,12 @@ const Search = props => {
                     value={searchQuery}
                     onChange={e => setSearchQuery(e.target.value)}
                 />
-                <button onClick={() => bookSearchHttpHandler(searchQuery, 1)}><img src='./img/Search-icon.png' className='search-icon' /></button>
+                <button onClick={() => bookSearchHttpHandler(searchQuery, 1)}><FaSearch className='search-icon' />검색!</button>
             </div>
             <p className='result-length'>" <strong>{searchQuery}</strong> " 검색 결과, 총 <strong>{result.length}</strong> 개의 책이 있습니다.</p>
             <div className='book-container'>
                 {bookContaniner}
             </div>
-
         </div>
     );
 };
