@@ -1,0 +1,16 @@
+.error-img > img {
+    margin-top: 180px;
+    width: 395px;
+}
+
+div > .error-img {
+    text-align: center;
+
+}
+
+@media all and (max-width: 900px) {
+    .error-img > img {
+        width: 285px;
+        left: 60px;
+    }
+}
