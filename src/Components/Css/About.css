@@ -24,7 +24,6 @@ ol {
 .dev-info {
     width: 550px;
     height: auto;
-    margin: 20px;
     display: inline-block;
     border-radius: 20px;
     background-color: #392e77;
@@ -63,6 +62,7 @@ details>summary::-webkit-details-marker {
     padding: 20px;
     background: rgb(33, 23, 80);
     display: block;
+    word-break: break-all;
 }
 
 .my-portfolio {
@@ -132,7 +132,30 @@ a > p {
     border-radius: 20px;
     margin-top: 12px;
 }
-@media all and (max-width: 1179px) {
+
+@media screen and (max-width: 1179px) {
+    .left-info {
+        position: relative;
+        top: 0;
+        float: none;
+        width: 100%;
+    }
+
+    .right-info {
+        width: 100%;
+        height: auto;
+        float: none;
+        overflow: visible;
+    }
+
+    a > p {
+        font-size: 14px;
+        margin-top: 6px;
+    }
+}
+
+/*tablet*/
+@media screen and (max-width: 819px) {
     h4 {
         font-size: 13px;
     }
@@ -171,5 +194,39 @@ a > p {
     a > p {
         font-size: 14px;
         margin-top: 6px;
+    }
+}
+
+/*galaxy fold*/
+@media screen and (max-width: 320px) {
+    h4 {
+        font-size: 13px;
+    }
+    .logo-profile {
+        width: 130px;
+    }
+
+    .dev-info {
+        width: 250px;
+        font-size: 13px;
+    }
+
+    .my-portfolio {
+        width: 250px;
+    }
+
+    .version-update-info {
+        width: 250px;
+        font-size: 13px;
+    }
+
+    a > p {
+        font-size: 14px;
+        margin-top: 6px;
+    }
+
+    button {
+        width: 70px;
+        font-size: 11px;
     }
 }

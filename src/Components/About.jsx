@@ -32,8 +32,8 @@ function About() {
             <div className='left-info'>
                 <img src="./img/Logo-profile.png" alt="BookArena" className='logo-profile' />
                 <div className='version-update-info'>
-                    <p>버전: 1.5.0 (Beta)</p>
-                    <p>최근 업데이트: 2022-09-13</p>
+                    <p>버전: 1.5.5 (Beta)</p>
+                    <p>최근 업데이트: 2022-09-15</p>
                 </div>
                 <h4>개발자 포트폴리오</h4>
                 <div className='my-portfolio'>
@@ -45,7 +45,7 @@ function About() {
             <div className='right-info'>
                 <h4>개발 정보</h4>
                 <div className='dev-info'>
-                    <details>
+                    <details open>
                         <summary>
                             <p><FaTools fontSize={19} className='dev-info-icon' />개발도구 & 공식문서 바로가기</p>
                         </summary>
@@ -54,7 +54,7 @@ function About() {
                             <p>API : <a href='https://developers.kakao.com/docs/latest/ko/daum-search/dev-guide#search-book'><img src='./img/kakaodev_logo.png' className='kakaodev-logo' /></a></p>
                         </div>
                     </details>
-                    <details>
+                    <details open>
                         <summary>
                             <p><HiInformationCircle fontSize={19} className='dev-info-icon' />개발자 정보</p>
                         </summary>
@@ -64,7 +64,7 @@ function About() {
                             <p>깃허브 주소: {MyInfo.mygithub}</p>
                         </div>
                     </details>
-                    <details>
+                    <details open>
                         <summary>
                             <p><FaListUl fontSize={19} className='dev-info-icon' />업데이트 내용</p>
                         </summary>
