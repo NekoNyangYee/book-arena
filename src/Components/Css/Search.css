@@ -100,10 +100,10 @@ button {
     padding-right: 45px;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 920px) {
 
     .result-length {
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .bookInfo {
@@ -131,8 +131,8 @@ button {
     }
 
     button {
-        top: 12px;
-        left: -1px;
+        top: 0;
+        left: 10px;
     }
 }
 
@@ -151,10 +151,5 @@ button {
     .input-search {
         width: 240px;
         font-size: 13px;
-    }
-
-    button {
-        top: 12px;
-        left: -1px;
     }
 }
