@@ -29,10 +29,10 @@ function Header() {
                         <FaSearch className='Search-icon' fontSize={23} />
                     </NavLink>
                 </div>
-                <div className='burger-list'>
-                    <p onClick={() => setExpanded(!expanded)}><NavLink to='/'><strong><HiHome fontSize={20} className='burger-list-icon'/>홈</strong></NavLink></p>
-                    <p onClick={() => setExpanded(!expanded)}><NavLink to='Search'><strong><FaSearch fontSize={20} className='burger-list-icon' />검색</strong></NavLink></p>
-                    <p onClick={() => setExpanded(!expanded)}><NavLink to='About'><strong><FaCog fontSize={20} className='burger-list-icon' />설정</strong></NavLink></p>
+                <div className='burger-list' onClick={() => setExpanded(!expanded)}>
+                    <p><NavLink to='/'><strong><HiHome fontSize={20} className='burger-list-icon'/>홈</strong></NavLink></p>
+                    <p><NavLink to='Search'><strong><FaSearch fontSize={20} className='burger-list-icon' />검색</strong></NavLink></p>
+                    <p><NavLink to='About'><strong><FaCog fontSize={20} className='burger-list-icon' />설정</strong></NavLink></p>
                 </div>
             </div>
         </>
