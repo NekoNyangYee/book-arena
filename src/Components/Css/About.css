@@ -1,7 +1,5 @@
 .about-page {
     text-align: center;
-    padding-left: 120px;
-    padding-right: 120px;
 }
 
 h2, h3 {
@@ -135,7 +133,7 @@ a > p {
     margin-top: 12px;
 }
 
-@media screen and (max-width: 1479px) {
+@media screen and (max-width: 1179px) {
     .left-info {
         position: relative;
         top: 0;
