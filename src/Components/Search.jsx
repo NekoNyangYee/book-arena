@@ -1,8 +1,7 @@
 import { bookSearch } from '../api';
-import { Routes, Route, Router, NavLink, BrowserRouter } from 'react-router-dom'
 import React, { useEffect, useState } from "react";
 
-import { FaCog, FaSearch, FaTools } from "react-icons/fa";
+import { FaSearch } from "react-icons/fa";
 
 import './Css/Search.css';
 
@@ -22,7 +21,7 @@ const Search = props => {
         const { data } = await bookSearch(params); //api 호출
         console.log(data.documents);
 
-        console.log(data.meta)
+        console.log(data.meta);
 
         if (reset) {
             setResult(data.documents);
@@ -31,20 +30,20 @@ const Search = props => {
         }
     };
     const bookContaniner = result.map((e, i) =>
-        <div key={i} className='bookInfo'>
-            <a href={e.url}>
+        <a href={e.url}>
+            <div key={i} className='bookInfo'>
                 <img src={e.thumbnail} alt={e.title} className='book-thumbnail' />
                 <div className='book-title'>
                     {e.title}
                 </div>
                 <hr />
                 <div className='book-price'>
-                    <p>정가 : {e.price}원</p>
+                    <p>정가 : {e.sale_price}원</p>
                     <p>판매상태 : {e.status}</p>
                 </div>
-            </a>
-        </div>
-    )
+            </div>
+        </a>
+    );
     return (
         <div className="Search-window">
             <div className='searchbox'>
@@ -55,9 +54,9 @@ const Search = props => {
                     value={searchQuery}
                     onChange={e => setSearchQuery(e.target.value)}
                 />
-                <button onClick={() => bookSearchHttpHandler(searchQuery, 1)}><FaSearch className='search-icon' />검색!</button>
+                <button onClick={(reset) => bookSearchHttpHandler(searchQuery, 1)}><FaSearch className='search-icon' />검색!</button>
             </div>
-            <p className='result-length'>" <strong>{searchQuery}</strong> " 검색 결과, 총 <strong>{result.length}</strong> 개의 책이 있습니다.</p>
+            <p className='result-length'><strong>{searchQuery}</strong> 검색 결과, 총 <strong>{result.length}</strong> 개의 책이 있습니다.</p>
             <div className='book-container'>
                 {bookContaniner}
             </div>

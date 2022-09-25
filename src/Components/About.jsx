@@ -32,8 +32,8 @@ function About() {
             <div className='left-info'>
                 <img src="./img/Logo-profile.png" alt="BookArena" className='logo-profile' />
                 <div className='version-update-info'>
-                    <p>버전: 1.5.5 (Beta)</p>
-                    <p>최근 업데이트: 2022-09-15</p>
+                    <p>버전: 2.0.0</p>
+                    <p>최근 업데이트: 2022-09-25</p>
                 </div>
                 <h4>개발자 포트폴리오</h4>
                 <div className='my-portfolio'>

@@ -7,11 +7,6 @@
 html {
     background-color: #1a0058;
     position: relative;
-    top: 60px;
+    margin-top: 60px;
     height: 100%;
-}
-
-h1 {
-    color: #FDA0A0;
-    text-align: center;
 }
