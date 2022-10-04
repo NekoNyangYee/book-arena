@@ -9,7 +9,6 @@ hr {
 .searchbox {
     z-index: 9;
     padding: 10px;
-    background-color: #1a0058 ;
     text-align: center;
 }
 
@@ -18,7 +17,7 @@ hr {
     height: 40px;
     margin: 6px;
     padding: 19px;
-    background-color: #3e1e88;
+    background: #3e1e88;
     margin-left: auto;
     margin-right: auto;
     font-size: 16px;
@@ -28,11 +27,20 @@ hr {
     transition: all .3s;
 }
 
+input::placeholder {
+    color: #b49af1;
+}
+
 .book-container {
-    z-index: 1;
+    position: absolute;
+    z-index: 99;
     width: 100%;
     height: auto;
+    overflow: hidden;
+    background: #1a0058;
+    border-radius: 20px;
     margin-bottom: 30px;
+    padding-bottom: 120px;
     text-align: center;
     font-size: 15px;
 }
@@ -45,7 +53,7 @@ hr {
 }
 
 .bookInfo {
-    z-index: 99;
+    z-index: 999;
     width: 190px;
     height: 310px;
     margin: 15px;
@@ -54,7 +62,6 @@ hr {
     border-radius: 14px;
     padding: 20px;
     overflow: hidden;
-    text-align: center;
     transition: all .3s;
 }
 
@@ -98,6 +105,13 @@ button {
     text-align: center;
     padding-left: 45px;
     padding-right: 45px;
+}
+
+.searchpage-info-img {
+    z-index: 1;
+    position: absolute;
+    width: 320px;
+    top: 30%;
 }
 
 @media screen and (max-width: 920px) {

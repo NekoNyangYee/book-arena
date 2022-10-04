@@ -38,7 +38,7 @@ const Search = props => {
                 </div>
                 <hr />
                 <div className='book-price'>
-                    <p>정가 : {e.sale_price}원</p>
+                    <p>할인가 : {e.sale_price}원</p>
                     <p>판매상태 : {e.status}</p>
                 </div>
             </div>
@@ -54,12 +54,13 @@ const Search = props => {
                     value={searchQuery}
                     onChange={e => setSearchQuery(e.target.value)}
                 />
-                <button onClick={(reset) => bookSearchHttpHandler(searchQuery, 1)}><FaSearch className='search-icon' />검색!</button>
+                <button onClick={() => bookSearchHttpHandler(searchQuery, 1)}><FaSearch className='search-icon' />검색!</button>
             </div>
-            <p className='result-length'><strong>{searchQuery}</strong> 검색 결과, 총 <strong>{result.length}</strong> 개의 책이 있습니다.</p>
             <div className='book-container'>
+                <p className='result-length'><strong>{searchQuery}</strong> 검색 결과, 총 <strong>{result.length}</strong> 개의 책이 있습니다.</p>
                 {bookContaniner}
             </div>
+            <img src="" className="searchpage-info-img" />
         </div>
     );
 };

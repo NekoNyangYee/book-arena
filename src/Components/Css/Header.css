@@ -15,8 +15,8 @@
 .Header-nav[data-isopen="true"] {
   z-index: 999;
   overflow: hidden;
-  height: 208px;
-  border-bottom: 2px dotted #9364ff;
+  height: 258px;
+  border-bottom: 3px dotted #9364ff;
 }
 
 .Main-logo {
@@ -63,6 +63,11 @@
   display: flex;
 }
 
+.right-menu-info {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
 @media all and (max-width: 700px) {
   .Header-nav {
     height: 50px;
@@ -73,11 +78,11 @@
   }
 
   .Nav-list {
-    transform: translate(185px, 0);
+    transform: translate(295px, 0);
   }
 
   .menu-burger {
-    transform: translate(80px, 0);
+    transform: translate(56px, 0);
   }
 }
 

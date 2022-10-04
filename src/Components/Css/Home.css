@@ -1,5 +1,7 @@
-.swiper-slide {
+.banner-area {
     z-index: 9;
+    width: 920px;
+    height: 240px;
     background: #392e77;
     border-radius: 20px;
     overflow: hidden;
@@ -20,13 +22,13 @@
     overflow: hidden;
 }
 
-.banner-text-area > h3 {
+.banner-text-area>h3 {
     position: absolute;
     top: 60%;
     left: 50px;
 }
 
-.banner-text-area > p {
+.banner-text-area>p {
     position: absolute;
     top: 60%;
     left: 50px;
@@ -43,15 +45,16 @@
 .first-home-area {
     z-index: 99;
     position: sticky;
-    top: 50px;
+    top: 0;
     width: 100%;
     height: 390px;
-    padding-top: 110px;
+    padding-top: 40px;
+    margin-top: 90px;
     margin-bottom: 690px;
     background: #1a0058;
 }
 
-.first-home-area > h2 {
+.first-home-area>h2 {
     margin: 30px;
 }
 
@@ -65,7 +68,7 @@
     background: #231558;
 }
 
-.second-home-area > h2 {
+.second-home-area>h2 {
     padding: 20px;
 }
 
@@ -75,7 +78,7 @@
     border-radius: 25px;
 }
 
-.home-book-info > p {
+.home-book-info>p {
     margin: 0;
     padding: 15px;
     height: 8px;
@@ -86,15 +89,12 @@
     text-align: center;
     position: sticky;
     width: 60%;
-    height: 290px;
+    height: 320px;
     border-radius: 20px;
 }
 
 .recommand-img {
-    width: 290px;
-    padding: 60px;
-    margin: auto;
-    display: block;
+    width: 87px;
 }
 
 .adaptive-device-img {
@@ -104,138 +104,277 @@
     display: block;
 }
 
-.goto-Search {
-    width: 30%;
-    border-radius: 29px;
-    margin: auto;
-    margin-top: 120px;
-    display: block;
-    background: #392e77;
+.recommand-books-top10 {
+    position: relative;
+    right: -40%;
+    margin-top: 39px;
+    display: inline-flex;
 }
 
-.goto-Search > p {
-    margin: 0;
-    padding: 12px;
+.recommand-books-top10>h2 {
+    padding: 6px;
     margin-left: 12px;
 }
 
-@media screen and (max-width: 1300px) {
-    .swiper-container {
-        text-align: center;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .first-container {
-        height: 250px;
-    }
+.category-slider-contents {
+    width: 70%;
+    height: auto;
+    border-radius: 20px;
 }
 
-@media screen and (max-width: 850px) {
+.category-container {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: -30px;
+}
+
+.category-container > h2 {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.category-text {
+    z-index: 99;
+    font-size: 12px;
+    position: relative;
+    bottom: 62px;
+}
+
+.category-book-list {
+    position: relative;
+    bottom: 32px;
+    background: #231558;
+    width: auto;
+    border-radius: 20px;
+}
+
+.category-banner-area {
+    width: auto;
+    height: 280px;
+}
+
+.category-slider-contents {
+    width: 50%;
+    height: 220px;
+    padding-bottom: 120px;
+}
+
+.category-img {
+    width: 100px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 1100px) and (max-height: 920px) {
+    .swiper-container {
+        text-align: center;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
     .slide-container {
         text-align: center;
         position: sticky;
-        width: 72%;
+        width: 92%;
         height: 260px;
         border-radius: 20px;
     }
 
+    .banner-area {
+        width: 630px;
+        height: 220px;
+    }
+
+    .first-container {
+        height: 250px;
+        text-align: center;
+    }
+
+    .first-home-area {
+        position: relative;
+        height: auto;
+        padding-top: 20px;
+        margin-bottom: 0;
+    }
+
+    .recommand-books-top10 {
+        position: relative;
+        left: 30%;
+        margin-top: 39px;
+        display: inline-flex;
+    }
+
     .home-book-thumbnail {
         width: 90px;
-        padding: 15px;
-        border-radius: 25px;
     }
 
-    .first-home-area {
-        padding-top: 0;
-        margin-bottom: 900px;
-    }
-    .second-home-area {
-        height: 1100px;
+    .adaptive-device-img {
+        width: 320px;
     }
 }
 
-@media screen and (max-width: 830px) {
-    .first-home-area {
-        padding-top: 130px;
-        margin-bottom: 900px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .banner-text-area > h3 {
-        top: 60%;
-        left: 20px;
-        font-size: 16px;
+@media screen and (max-width: 860px) and (max-height: 920px) {
+    .swiper-container {
+        width: 642px;
+        text-align: center;
+        height: 250px;
     }
 
-    .banner-text-area > p {
-        position: absolute;
-        top: 62%;
-        left: 20px;
-        font-size: 23px;
-    }
-
-    .home-book-info > p {
-        font-size: 15px;
-        overflow: hidden;
-    }
-    
     .slide-container {
         text-align: center;
-        width: 90%;
+        position: sticky;
+        width: 92%;
+        height: 260px;
+        border-radius: 20px;
+    }
+
+    .first-container {
+        height: 250px;
+        text-align: center;
+    }
+
+    .first-home-area {
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 120px;
+    }
+
+    .recommand-books-top10 {
+        position: relative;
+        left: 10%;
+        font-size: 14px;
+        margin-top: 39px;
+        display: inline-flex;
+    }
+
+    .recommand-img {
+        width: 67px;
+    }
+
+    .home-book-thumbnail {
+        width: 90px;
+    }
+
+    .adaptive-device-img {
+        width: 320px;
+    }
+}
+
+@media screen and (max-width: 460px) and (max-height: 920px) {
+    .swiper-container {
+        width: 40%;
+        text-align: center;
+        height: 250px;
+    }
+
+    .slide-container {
+        text-align: center;
+        position: sticky;
+        width: 92%;
+        height: 260px;
         border-radius: 20px;
     }
 
     .first-home-area {
-        padding-top: 70px;
+        position: sticky;
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 200px;
+    }
+
+    .second-home-area {
+        height: 820px;
+    }
+
+    .recommand-books-top10 {
+        position: relative;
+        left: 10%;
+        font-size: 14px;
+        margin-top: 39px;
+        display: inline-flex;
     }
 
     .recommand-img {
+        width: 67px;
+    }
+
+    .home-book-thumbnail {
+        width: 90px;
+    }
+
+    .adaptive-device-img {
+        width: 320px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .swiper-container {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+
+    .banner-area {
+        width: 530px;
+        height: 220px;
+    }
+
+    .category-slider-contents {
+        width: 50%;
+        height: auto;
+        border-radius: 20px;
+    }
+    
+    .adaptive-device-img {
+        width: 380px;
+    }
+
+    .recommand-books-top10 {
         position: relative;
-        top: 70px;
-        width: 250px;
-        padding: 30px;
-    }
-    .adaptive-device-img {
-        width: 290px;
-        padding-top: 220px;
+        right: -30%;
     }
 }
 
-/*mobile*/
-@media screen and (max-width: 420px) {
-    .first-home-area {
-        padding-top: 20px;
-        margin-bottom: 520px;
+@media screen and (max-width: 767px) {
+    .swiper-container {
+        width: auto;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
-    .second-home-area {
-        height: 840px;
+    .banner-area {
+        width: 330px;
+        height: 220px;
+    }
+
+    .banner-text-area>h3 {
+        position: absolute;
+        top: 60%;
+        left: 20px;
+        font-size: 15px;
+    }
+
+    .banner-text-area>p {
+        position: absolute;
+        top: 60%;
+        left: 20px;
+        font-size: 23px;
     }
 
     .adaptive-device-img {
-        width: 290px;
-        padding-top: 170px;
+        width: 280px;
     }
 
-    .goto-Search {
-        width: 80%;
-        padding: 2px;
+    .category-slider-contents {
+        width: 90%;
+        height: auto;
     }
 }
 
-@media screen and (max-width: 380px) {
-    .first-home-area {
-        padding-top: 0;
-        margin-bottom: 520px;
-    }
-
-    .second-home-area {
-        height: 840px;
-    }
-
-    .adaptive-device-img {
-        padding-top: 290px;
+@media screen and (max-height: 920px) {
+    .swiper-container {
+        width: auto;
+        height: 220px;
     }
 }

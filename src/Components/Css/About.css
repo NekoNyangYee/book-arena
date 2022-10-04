@@ -102,6 +102,7 @@ a > p {
 }
 
 .version-update-info {
+    text-align: left;
     width: 550px;
     height: auto;
     margin-left: auto;
@@ -109,6 +110,10 @@ a > p {
     padding: 6px;
     border-radius: 20px;
     background: #392e77;
+}
+
+.version-update-info>p {
+    margin-left: 20px;
 }
 
 .dev-info-icon {
